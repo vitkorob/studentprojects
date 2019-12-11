@@ -13,7 +13,7 @@ NRMainWnd::NRMainWnd(QWidget *parent) : QMainWindow(parent)
 
 void NRMainWnd::writeSettings()
 {
-    QSettings settings("Dmitri Diakonov", "Rings");
+    QSettings settings("Victor Korobkovsky", "Rings");
 
     settings.setValue("geometry", saveGeometry());
     settings.setValue("state", saveState());
@@ -21,7 +21,7 @@ void NRMainWnd::writeSettings()
 
 void NRMainWnd::readSettings()
 {
-    QSettings settings("Dmitri Diakonov", "Rings");
+    QSettings settings("Victor Korobkovsky", "Rings");
 
     restoreGeometry(settings.value("geometry").toByteArray());
     restoreState(settings.value("state").toByteArray());

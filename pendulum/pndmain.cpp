@@ -93,7 +93,7 @@ void PndMain::about()
 
 void PndMain::writeSettings()
 {
-    QSettings settings("Keon Woo Nam", "Pendulum");
+    QSettings settings("Victor Korobkovsky", "Pendulum");
 
     settings.setValue("geometry", saveGeometry());
     settings.setValue("state", saveState());
@@ -101,7 +101,7 @@ void PndMain::writeSettings()
 
 void PndMain::readSettings()
 {
-    QSettings settings("Keon Woo Nam", "Pendulum");
+    QSettings settings("Victor Korobkovsky", "Pendulum");
 
     restoreGeometry(settings.value("geometry").toByteArray());
     restoreState(settings.value("state").toByteArray());

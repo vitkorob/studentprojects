@@ -101,7 +101,7 @@ void ShipMain::closeEvent(QCloseEvent *event)
 
 void ShipMain::writeSettings()
 {
-    QSettings settings("Cyril Fedorenko", "Ship");
+    QSettings settings("Victor Korobkovsky", "Ship");
 
     settings.setValue("geometry", saveGeometry());
     settings.setValue("state", saveState());
@@ -109,7 +109,7 @@ void ShipMain::writeSettings()
 
 void ShipMain::readSettings()
 {
-    QSettings settings("Cyril Fedorenko", "Ship");
+    QSettings settings("Victor Korobkovsky", "Ship");
 
     restoreGeometry(settings.value("geometry").toByteArray());
     restoreState(settings.value("state").toByteArray());
